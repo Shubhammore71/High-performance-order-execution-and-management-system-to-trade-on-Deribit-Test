@@ -48,8 +48,8 @@ This project demonstrates the development of a high-performance order execution 
 ### Building the Project
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/Shubhammore71/deribit-trader-cpp
+   cd folder
    ```
 2. Compile the code:
    ```bash
@@ -102,7 +102,6 @@ getOrderBook("ETH-PERPETUAL", accessToken);
 ## Contact
 For any inquiries or contributions, please reach out to:
 - **Email:** [shubham.more@iitgn.ac.in]
-- **GitHub:** [your-github-profile]
 
 ---
 This project showcases a robust and efficient trading system with real-time WebSocket capabilities, highlighting advanced C++ skills and expertise in API integration. The modular design and clear documentation ensure scalability and ease of understanding.
