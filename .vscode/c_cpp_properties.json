@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/include",                       // Homebrew-installed headers
+                "/opt/homebrew/Cellar/websocketpp/0.8.2/include", // WebSocket++ headers
+                "/opt/homebrew/opt/boost/include",            // Boost library headers
+                "/opt/homebrew/opt/asio/include",             // ASIO dependency
+                "/opt/homebrew/Cellar/nlohmann-json/3.11.2/include", // nlohmann/json headers
+                "/usr/local/include",                         // General includes (if applicable)
+                "/Library/Developer/CommandLineTools/usr/include/c++/v1" // Standard library headers
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/opt/homebrew/opt/llvm/bin/clang++", // Use Homebrew-installed LLVM Clang
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}
