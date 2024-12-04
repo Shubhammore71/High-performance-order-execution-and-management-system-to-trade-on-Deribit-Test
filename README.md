@@ -95,10 +95,6 @@ getOrderBook("ETH-PERPETUAL", accessToken);
 - Send: `subscribe:BTC-PERPETUAL`
 - Server Response: `Acknowledged: subscribe:BTC-PERPETUAL`
 
-## Deliverables
-1. **Source Code:** Complete, well-documented source code organized by functionality.
-2. **Video Recording:** Demonstrates system functionality, a code walkthrough, and a detailed explanation of the implementation.
-
 ## Future Enhancements
 - Enhance error handling and implement retry mechanisms for network failures.
 - Extend WebSocket functionality to include additional data types like trades and positions.
