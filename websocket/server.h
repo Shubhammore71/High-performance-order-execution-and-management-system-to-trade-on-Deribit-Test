@@ -7,10 +7,10 @@
 #include <map>
 #include <vector>
 #include <memory>
-#include <functional>
 #include <iostream>
+#include <mutex>
 
-class WebSocketServer {
+class WebSocketServer : public std::enable_shared_from_this<WebSocketServer> {
 public:
     explicit WebSocketServer(unsigned short port);
     void run();
@@ -26,6 +26,7 @@ private:
     boost::asio::io_context ioContext;
     boost::asio::ip::tcp::acceptor acceptor;
     std::map<std::string, std::vector<std::shared_ptr<boost::beast::websocket::stream<boost::asio::ip::tcp::socket>>>> subscribers;
+    std::mutex subscribersMutex; // Thread safety
 };
 
 #endif // SERVER_H

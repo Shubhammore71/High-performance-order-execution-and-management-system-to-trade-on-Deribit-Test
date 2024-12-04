@@ -294,7 +294,7 @@ int main() {
     std::string accessToken = getAccessToken(clientId, clientSecret);
     if (!accessToken.empty()) 
     {
-        //placeOrder("buy","100", accessToken, "100", "ETH-PERPETUAL");
+        //placeOrder("buy","1000", accessToken, "1000", "BTC-5AUG23");
         //placeOrder("buy","10", accessToken, "10", "BTC-PERPETUAL");
         //placeOrder("buy","50", accessToken, "50", "BTC-PERPETUAL");
         //placeOrder("sell","20", accessToken, "20", "ETH-PERPETUAL");
